@@ -71,7 +71,11 @@ public class CartPage extends BasePage {
         return new OrderConfirmationPage(driver);
     }
     public boolean captcha (){
-        return captchaInput.isDisplayed();
+        if (captchaInput.isDisplayed()){
+            return true;
+        } else {
+            return false;
+        }
     }
     public OrderConfirmationPage payLabel(String description){
         cashOnDeliveryRBtn.click();

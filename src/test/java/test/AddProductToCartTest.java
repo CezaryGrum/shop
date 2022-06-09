@@ -33,5 +33,6 @@ public class AddProductToCartTest extends BaseTest{
         cartPage.addShippingAddress(DESCRIPTION, NAME_AND_SURNAME, ADDRESS, ADDRESS_MORE, POSTCODE,
                 TOWN, COUNTRY, PHONE_NUMBER, EMAIL);
         cartPage.captcha();
+        Assert.assertTrue(cartPage.captcha(), "CaptchaInput is displayed.");
     }
 }
