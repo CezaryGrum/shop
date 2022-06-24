@@ -18,6 +18,9 @@ public class NavigationBar extends BasePage{
     private WebElement searchInput;
     @FindBy (xpath = "//a[contains(.,'Wyloguj')]")
     private WebElement logoutBtn;
+    @FindBy (xpath = "//div[contains(@id,'menu')]/ul/li[1]")
+    private WebElement navMenuFirstDropdown;
+
 
     public NavigationBar(WebDriver driver) {
         super(driver);
@@ -45,5 +48,9 @@ public class NavigationBar extends BasePage{
         searchInput.sendKeys(productName);
         searchBtn.click();
         return new SearchResultsPage(driver);
+    }
+    public CategoriesPage goToCategoriesPage(){
+        navMenuFirstDropdown.click();
+        return new CategoriesPage(driver);
     }
 }

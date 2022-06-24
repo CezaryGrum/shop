@@ -19,6 +19,7 @@ public class LoginTest extends BaseTest{
         List<String> expectedErrors = List.of("Zły login lub hasło.");
         Assert.assertEquals(errors, expectedErrors);
     }
+
     @Test(priority = 1)
     public void succesfulLoginTest(){
         NavigationBar navigationBar = new NavigationBar(driver);
