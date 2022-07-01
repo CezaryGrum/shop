@@ -11,9 +11,6 @@
         <parameter name="browser" value="chrome" />
         <classes>
             <class name="test.LoginTest" />
-            <class name="test.SearchProductTest" />
-            <class name="test.AddProductToCartTest"></class>
-            <class name="test.AddProductToCartLoggedUserTest"></class>
         </classes>
     </test>
 </suite>

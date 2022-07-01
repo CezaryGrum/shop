@@ -1,28 +1,21 @@
 package test;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import utilities.ReadConfig;
 
-import javax.print.CancelablePrintJob;
-import java.io.FileInputStream;
+import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.Properties;
-import java.util.concurrent.TimeUnit;
-
 
 public class BaseTest {
     ReadConfig readConfig=new ReadConfig();
@@ -31,7 +24,7 @@ public class BaseTest {
     public String firefoxpath = readConfig.getFirefoxPath();
     public String base_url = readConfig.getApplicationURL();
     public static Logger logger;
-    protected WebDriver driver;
+    public static WebDriver driver;
 
     @Parameters("browser")
     @BeforeClass(alwaysRun = true)
@@ -54,6 +47,13 @@ public class BaseTest {
         driver.manage().deleteAllCookies();
         driver.quit();
         logger.info("The site has been closed");
+    }
+    public void captureScreen(WebDriver driver, String tname) throws IOException {
+        TakesScreenshot ts = (TakesScreenshot) driver;
+        File source = ts.getScreenshotAs(OutputType.FILE);
+        File target = new File("./Screenshots/" + tname + ".png");
+        FileUtils.copyFile(source, target);
+        System.out.println("Screenshot taken");
     }
 
 

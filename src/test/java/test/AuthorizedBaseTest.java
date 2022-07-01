@@ -25,17 +25,7 @@ public class AuthorizedBaseTest extends BaseTest {
     }
 
     @AfterMethod(alwaysRun = true)
-    public void logout(ITestResult result){
-        if (result.getStatus()==ITestResult.FAILURE){
-            TakesScreenshot screenshot = ((TakesScreenshot) driver);
-            File file = screenshot.getScreenshotAs(OutputType.FILE);
-            try{
-                FileUtils.copyFile(file, new File(String.format("Screenshots/%s.png",
-                        result.getMethod().getMethodName())));
-            }catch (IOException e){
-                System.err.println("Unable to create screenshot file "+e.getMessage());
-            }
-        }
+    public void logout(){
         NavigationBar navigationBar = new NavigationBar(driver);
         navigationBar.logout();
         logger.info("User logged out successfully");

@@ -125,3 +125,45 @@
 2022-07-01 17:49:40,257 - SeleniumProject1 -INFO - The user filled in the required fields and went to the order summary view
 2022-07-01 17:49:41,934 - SeleniumProject1 -INFO - User logged out successfully
 2022-07-01 17:49:42,934 - SeleniumProject1 -INFO - The site has been closed
+2022-07-01 18:06:41,279 - SeleniumProject1 -INFO - User is not logged in
+2022-07-01 18:06:45,204 - SeleniumProject1 -INFO - User is logged
+2022-07-01 18:06:46,121 - SeleniumProject1 -INFO - The site has been closed
+2022-07-01 18:07:06,287 - SeleniumProject1 -INFO - User logged in correctly
+2022-07-01 18:07:08,234 - SeleniumProject1 -INFO - The user searched for a non-existent product
+2022-07-01 18:07:09,680 - SeleniumProject1 -INFO - User logged out successfully
+2022-07-01 18:07:12,875 - SeleniumProject1 -INFO - User logged in correctly
+2022-07-01 18:07:23,256 - SeleniumProject1 -INFO - The user searched for an existing product
+2022-07-01 18:07:25,050 - SeleniumProject1 -INFO - User logged out successfully
+2022-07-01 18:07:26,171 - SeleniumProject1 -INFO - The site has been closed
+2022-07-01 18:10:15,253 - SeleniumProject1 -INFO - User is not logged in
+2022-07-01 18:10:20,216 - SeleniumProject1 -INFO - User is logged
+2022-07-01 18:10:21,243 - SeleniumProject1 -INFO - The site has been closed
+2022-07-01 18:11:00,622 - SeleniumProject1 -INFO - User logged in correctly
+2022-07-01 18:11:02,542 - SeleniumProject1 -INFO - The user searched for a non-existent product
+2022-07-01 18:11:04,033 - SeleniumProject1 -INFO - User logged out successfully
+2022-07-01 18:11:07,779 - SeleniumProject1 -INFO - User logged in correctly
+2022-07-01 18:11:15,869 - SeleniumProject1 -INFO - The user searched for an existing product
+2022-07-01 18:11:17,111 - SeleniumProject1 -INFO - User logged out successfully
+2022-07-01 18:11:18,718 - SeleniumProject1 -INFO - The site has been closed
+2022-07-01 18:11:33,604 - SeleniumProject1 -INFO - The user searched for a product
+2022-07-01 18:11:35,840 - SeleniumProject1 -INFO - The user went to the product details
+2022-07-01 18:11:36,694 - SeleniumProject1 -INFO - The user changed the number of items and clicked add to cart
+2022-07-01 18:11:39,629 - SeleniumProject1 -INFO - The user went to the order page
+2022-07-01 18:11:44,155 - SeleniumProject1 -INFO - The user has filled in the required fields
+2022-07-01 18:11:44,268 - SeleniumProject1 -INFO - A captcha appeared
+2022-07-01 18:11:45,368 - SeleniumProject1 -INFO - The site has been closed
+2022-07-01 18:12:06,926 - SeleniumProject1 -INFO - User logged in correctly
+2022-07-01 18:12:09,305 - SeleniumProject1 -INFO - The user searched for a product
+2022-07-01 18:12:16,687 - SeleniumProject1 -INFO - The user went to the product details
+2022-07-01 18:12:17,489 - SeleniumProject1 -INFO - The user changed the number of items and clicked add to cart
+2022-07-01 18:12:23,431 - SeleniumProject1 -INFO - The user went to the order page
+2022-07-01 18:12:26,977 - SeleniumProject1 -INFO - The user filled in the required fields and went to the order summary view
+2022-07-01 18:12:28,664 - SeleniumProject1 -INFO - User logged out successfully
+2022-07-01 18:12:29,742 - SeleniumProject1 -INFO - The site has been closed
+2022-07-01 18:14:31,372 - SeleniumProject1 -INFO - User is logged
+2022-07-01 18:14:32,955 - SeleniumProject1 -INFO - The site has been closed
+2022-07-01 18:21:09,377 - SeleniumProject1 -INFO - User is not logged in
+2022-07-01 18:21:13,400 - SeleniumProject1 -INFO - User is logged
+2022-07-01 18:21:17,005 - SeleniumProject1 -INFO - The site has been closed
+2022-07-01 18:28:50,332 - SeleniumProject1 -INFO - User is logged
+2022-07-01 18:28:51,862 - SeleniumProject1 -INFO - The site has been closed
