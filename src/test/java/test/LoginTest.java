@@ -18,6 +18,7 @@ public class LoginTest extends BaseTest{
                 .getErrors();
         List<String> expectedErrors = List.of("Zły login lub hasło.");
         Assert.assertEquals(errors, expectedErrors);
+        logger.info("User is not logged in");
     }
 
     @Test(priority = 1)
@@ -29,5 +30,6 @@ public class LoginTest extends BaseTest{
                 .getCurrentlyLoggedInUser();
         Assert.assertTrue(message.contains(USER_NAME), String.format("Expected '%s' to be in '%s'",
                 USER_NAME, message));
+        logger.info("User is logged");
     }
 }

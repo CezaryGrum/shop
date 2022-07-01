@@ -22,17 +22,24 @@ public class AddProductToCartTest extends BaseTest{
     public void addProductTest() {
         NavigationBar navigationBar = new NavigationBar(driver);
         navigationBar.search(PRODUCT_NAME);
+        logger.info("The user searched for a product");
         SearchResultsPage searchResultsPage = new SearchResultsPage(driver);
         searchResultsPage.getFoundProductNames();
         searchResultsPage.openProductDetails(PRODUCT_NAME);
+        logger.info("The user went to the product details");
         ProductDetailsPage productDetailsPage = new ProductDetailsPage(driver);
         productDetailsPage.addToCart(PRODUCT_QUANTITY);
+        logger.info("The user changed the number of items and clicked add to cart");
         productDetailsPage.addToCartPopup();
         productDetailsPage.goToOrderPage();
+        logger.info("The user went to the order page");
         CartPage cartPage = new CartPage(driver);
         cartPage.addShippingAddress(DESCRIPTION, NAME_AND_SURNAME, ADDRESS, ADDRESS_MORE, POSTCODE,
                 TOWN, COUNTRY, PHONE_NUMBER, EMAIL);
+        logger.info("The user has filled in the required fields");
         cartPage.captcha();
+        logger.info("A captcha appeared");
         Assert.assertTrue(cartPage.captcha(), "CaptchaInput is displayed.");
+
     }
 }

@@ -28,6 +28,7 @@ public class SearchProductTest extends AuthorizedBaseTest {
         String actualResults = searchResultsPage.getMessageNoResultsFound();
         String expectedResults = NO_PRODUCT_FOUND;
         Assert.assertEquals(actualResults, expectedResults);
+        logger.info("The user searched for a non-existent product");
     }
     @Test(priority = 1)
     public void multipleFoundResultWithCommonName(){
@@ -47,5 +48,6 @@ public class SearchProductTest extends AuthorizedBaseTest {
                             expectedResult, foundResults));
         }
         softAssert.assertAll();
+        logger.info("The user searched for an existing product");
     }
     }

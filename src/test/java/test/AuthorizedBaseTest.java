@@ -12,11 +12,14 @@ import java.io.File;
 import java.io.IOException;
 
 public class AuthorizedBaseTest extends BaseTest {
+    public String username = "harrypotter_g77@op.pl";
+    public String password = "Gryfindor7&";
     @BeforeMethod(alwaysRun = true)
     public void login(){
         NavigationBar navigationBar = new NavigationBar(driver);
         navigationBar.openLoginPage()
-                .succesfulLogin("harrypotter_g77@op.pl", "Gryfindor7&");
+                .succesfulLogin(username, password);
+        logger.info("User logged in correctly");
     }
 
     @AfterMethod(alwaysRun = true)
@@ -25,7 +28,7 @@ public class AuthorizedBaseTest extends BaseTest {
             TakesScreenshot screenshot = ((TakesScreenshot) driver);
             File file = screenshot.getScreenshotAs(OutputType.FILE);
             try{
-                FileUtils.copyFile(file, new File(String.format("target/screenshots/%s.png",
+                FileUtils.copyFile(file, new File(String.format("Screenshots/%s.png",
                         result.getMethod().getMethodName())));
             }catch (IOException e){
                 System.err.println("Unable to create screenshot file "+e.getMessage());
@@ -33,5 +36,6 @@ public class AuthorizedBaseTest extends BaseTest {
         }
         NavigationBar navigationBar = new NavigationBar(driver);
         navigationBar.logout();
+        logger.info("User logged out successfully");
     }
 }
