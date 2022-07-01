@@ -7,13 +7,15 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import pageObjects.NavigationBar;
+import utilities.ReadConfig;
 
 import java.io.File;
 import java.io.IOException;
 
 public class AuthorizedBaseTest extends BaseTest {
-    public String username = "harrypotter_g77@op.pl";
-    public String password = "Gryfindor7&";
+    ReadConfig readConfig = new ReadConfig();
+    public String username = readConfig.getUserLogin();
+    public String password = readConfig.getPassword();
     @BeforeMethod(alwaysRun = true)
     public void login(){
         NavigationBar navigationBar = new NavigationBar(driver);

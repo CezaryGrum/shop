@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pageObjects.NavigationBar;
 import pageObjects.SearchResultsPage;
+import utilities.ReadConfig;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,6 +13,7 @@ import java.util.List;
 import static pageObjects.BasePage.driver;
 
 public class SearchProductTest extends AuthorizedBaseTest {
+    ReadConfig readConfig = new ReadConfig();
     private static final String NOT_EXISTING_PRODUCT = "okulary123";
     private static final String NO_PRODUCT_FOUND = "Brak produktów dla podanego wyszukiwania. " +
             "Spróbuj wpisać inne wyrażenie lub poszukać produktu, korzystając z kategorii sklepu.";

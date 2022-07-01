@@ -12,6 +12,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import utilities.ReadConfig;
 
 import javax.print.CancelablePrintJob;
 import java.io.FileInputStream;
@@ -23,16 +24,19 @@ import java.util.concurrent.TimeUnit;
 
 
 public class BaseTest {
-    public String BaseURL="https://besthunters.pl/";
+    ReadConfig readConfig=new ReadConfig();
+
+    public String chromepath = readConfig.getChromePath();
+    public String base_url=readConfig.getApplicationURL();
     public static Logger logger;
     protected WebDriver driver;
 
     @BeforeClass(alwaysRun = true)
     public void setup() {
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", chromepath);
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get(BaseURL);
+        driver.get(base_url);
         driver.findElement(By.id("cookies_close")).click();
         logger = Logger.getLogger("SeleniumProject1");
         PropertyConfigurator.configure("Log4j.properties");

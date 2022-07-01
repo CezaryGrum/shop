@@ -3,18 +3,22 @@ package test;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.NavigationBar;
+import utilities.ReadConfig;
 
 import java.util.List;
 
 public class LoginTest extends BaseTest{
-    private static final String USER_NAME = "harrypotter_g77@op.pl";
-    private static final String PASSWORD = "Gryfindor7&";
+    ReadConfig readConfig = new ReadConfig();
+    public String USER_NAME = readConfig.getUserLogin();
+    public String PASSWORD = readConfig.getPassword();
+    public String BAD_USER_NAME = readConfig.getWrongUserLogin();
+    public String BAD_PASSWORD = readConfig.getWrongPassword();
 
     @Test(priority = 0)
     public void unsuccessfulLoginTest(){
         NavigationBar navigationBar = new NavigationBar(driver);
         List<String> errors = navigationBar.openLoginPage()
-                .unsuccessfulLogin("invalidName","invalidPassword")
+                .unsuccessfulLogin(BAD_USER_NAME,BAD_PASSWORD)
                 .getErrors();
         List<String> expectedErrors = List.of("Zły login lub hasło.");
         Assert.assertEquals(errors, expectedErrors);
