@@ -12,6 +12,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import utilities.ReadConfig;
 
 import javax.print.CancelablePrintJob;
@@ -27,20 +28,26 @@ public class BaseTest {
     ReadConfig readConfig=new ReadConfig();
 
     public String chromepath = readConfig.getChromePath();
-    public String base_url=readConfig.getApplicationURL();
+    public String firefoxpath = readConfig.getFirefoxPath();
+    public String base_url = readConfig.getApplicationURL();
     public static Logger logger;
     protected WebDriver driver;
 
+    @Parameters("browser")
     @BeforeClass(alwaysRun = true)
-    public void setup() {
-        System.setProperty("webdriver.chrome.driver", chromepath);
-        driver = new ChromeDriver();
+    public void setup(String br) {
+        logger = Logger.getLogger("SeleniumProject1");
+        PropertyConfigurator.configure("Log4j.properties");
+        if(br.equals("chrome")) {
+            System.setProperty("webdriver.chrome.driver", chromepath);
+            driver = new ChromeDriver();
+        } else if (br.equals("firefox")){
+            System.setProperty("webdriver.gecko.driver", firefoxpath);
+            driver = new FirefoxDriver();
+        }
         driver.manage().window().maximize();
         driver.get(base_url);
         driver.findElement(By.id("cookies_close")).click();
-        logger = Logger.getLogger("SeleniumProject1");
-        PropertyConfigurator.configure("Log4j.properties");
-
     }
     @AfterClass(alwaysRun = true)
     public void tearDown(){
