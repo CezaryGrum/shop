@@ -167,3 +167,84 @@
 2022-07-01 18:21:17,005 - SeleniumProject1 -INFO - The site has been closed
 2022-07-01 18:28:50,332 - SeleniumProject1 -INFO - User is logged
 2022-07-01 18:28:51,862 - SeleniumProject1 -INFO - The site has been closed
+2022-07-04 08:32:54,709 - SeleniumProject1 -INFO - User is not logged in
+2022-07-04 08:32:59,172 - SeleniumProject1 -INFO - User is logged
+2022-07-04 08:33:00,282 - SeleniumProject1 -INFO - The site has been closed
+2022-07-04 09:34:40,828 - SeleniumProject1 -INFO - user name provided
+2022-07-04 09:34:40,848 - SeleniumProject1 -INFO - password provided
+2022-07-04 09:34:47,035 - SeleniumProject1 -INFO - The site has been closed
+2022-07-04 09:37:53,790 - SeleniumProject1 -INFO - user name provided
+2022-07-04 09:37:53,806 - SeleniumProject1 -INFO - password provided
+2022-07-04 09:37:59,900 - SeleniumProject1 -INFO - user name provided
+2022-07-04 09:37:59,901 - SeleniumProject1 -INFO - password provided
+2022-07-04 09:38:05,678 - SeleniumProject1 -INFO - user name provided
+2022-07-04 09:38:05,680 - SeleniumProject1 -INFO - password provided
+2022-07-04 09:38:12,300 - SeleniumProject1 -INFO - user name provided
+2022-07-04 09:38:12,301 - SeleniumProject1 -INFO - password provided
+2022-07-04 09:38:16,547 - SeleniumProject1 -INFO - The site has been closed
+2022-07-04 09:53:03,399 - SeleniumProject1 -INFO - The login or password is correct
+2022-07-04 09:53:07,584 - SeleniumProject1 -INFO - The site has been closed
+2022-07-04 09:59:52,433 - SeleniumProject1 -INFO - The login or password is correct
+2022-07-04 09:59:57,165 - SeleniumProject1 -INFO - The site has been closed
+2022-07-04 10:16:43,411 - SeleniumProject1 -INFO - The login or password is correct
+2022-07-04 10:16:49,375 - SeleniumProject1 -INFO - The login or password is correct
+2022-07-04 10:16:55,704 - SeleniumProject1 -INFO - The login or password is correct
+2022-07-04 10:17:04,191 - SeleniumProject1 -INFO - The site has been closed
+2022-07-04 10:46:53,813 - SeleniumProject1 -INFO - login and password are incorrect
+2022-07-04 10:46:59,716 - SeleniumProject1 -INFO - login and password are incorrect
+2022-07-04 10:47:05,516 - SeleniumProject1 -INFO - login and password are incorrect
+2022-07-04 10:47:11,400 - SeleniumProject1 -INFO - login and password are incorrect
+2022-07-04 10:47:15,494 - SeleniumProject1 -INFO - The site has been closed
+2022-07-04 10:50:28,240 - SeleniumProject1 -INFO - login and password are incorrect
+2022-07-04 10:50:34,055 - SeleniumProject1 -INFO - login and password are incorrect
+2022-07-04 10:50:39,979 - SeleniumProject1 -INFO - login and password are incorrect
+2022-07-04 10:50:45,970 - SeleniumProject1 -INFO - login and password are incorrect
+2022-07-04 10:50:49,993 - SeleniumProject1 -INFO - The site has been closed
+2022-07-04 10:53:27,528 - SeleniumProject1 -INFO - login and password are incorrect
+2022-07-04 10:53:34,459 - SeleniumProject1 -INFO - login and password are incorrect
+2022-07-04 10:53:41,659 - SeleniumProject1 -INFO - login and password are incorrect
+2022-07-04 10:53:47,640 - SeleniumProject1 -INFO - login and password are incorrect
+2022-07-04 10:53:51,561 - SeleniumProject1 -INFO - The site has been closed
+2022-07-04 11:01:06,113 - SeleniumProject1 -INFO - login and password are incorrect
+2022-07-04 11:01:12,850 - SeleniumProject1 -INFO - login and password are incorrect
+2022-07-04 11:01:20,537 - SeleniumProject1 -INFO - login and password are incorrect
+2022-07-04 11:01:27,988 - SeleniumProject1 -INFO - The site has been closed
+2022-07-04 11:10:06,879 - SeleniumProject1 -INFO - login and password are incorrect
+2022-07-04 11:10:13,081 - SeleniumProject1 -INFO - login and password are incorrect
+2022-07-04 11:10:19,312 - SeleniumProject1 -INFO - login and password are incorrect
+2022-07-04 11:10:27,241 - SeleniumProject1 -INFO - The site has been closed
+2022-07-04 11:37:12,226 - SeleniumProject1 -INFO - Login test passed
+2022-07-04 11:37:18,364 - SeleniumProject1 -INFO - Login test passed
+2022-07-04 11:37:24,912 - SeleniumProject1 -INFO - Login test passed
+2022-07-04 11:37:31,017 - SeleniumProject1 -INFO - Login test passed
+2022-07-04 11:37:35,298 - SeleniumProject1 -INFO - The site has been closed
+2022-07-04 11:41:38,185 - SeleniumProject1 -INFO - The site has been closed
+2022-07-04 11:48:28,159 - SeleniumProject1 -INFO - Login test passed
+2022-07-04 11:48:32,211 - SeleniumProject1 -INFO - The site has been closed
+2022-07-04 12:17:59,276 - SeleniumProject1 -INFO - Login test passed
+2022-07-04 12:18:03,485 - SeleniumProject1 -INFO - The site has been closed
+2022-07-04 12:18:21,708 - SeleniumProject1 -INFO - User is not logged in
+2022-07-04 12:18:25,405 - SeleniumProject1 -INFO - User is logged
+2022-07-04 12:18:26,507 - SeleniumProject1 -INFO - The site has been closed
+2022-07-04 12:18:59,437 - SeleniumProject1 -INFO - User logged in correctly
+2022-07-04 12:19:01,426 - SeleniumProject1 -INFO - The user searched for a non-existent product
+2022-07-04 12:19:02,852 - SeleniumProject1 -INFO - User logged out successfully
+2022-07-04 12:19:07,158 - SeleniumProject1 -INFO - User logged in correctly
+2022-07-04 12:19:10,279 - SeleniumProject1 -INFO - The user searched for an existing product
+2022-07-04 12:19:11,577 - SeleniumProject1 -INFO - User logged out successfully
+2022-07-04 12:19:12,760 - SeleniumProject1 -INFO - The site has been closed
+2022-07-04 12:19:29,117 - SeleniumProject1 -INFO - The user searched for a product
+2022-07-04 12:19:31,348 - SeleniumProject1 -INFO - The user went to the product details
+2022-07-04 12:19:32,270 - SeleniumProject1 -INFO - The user changed the number of items and clicked add to cart
+2022-07-04 12:19:35,202 - SeleniumProject1 -INFO - The user went to the order page
+2022-07-04 12:19:40,116 - SeleniumProject1 -INFO - The user has filled in the required fields
+2022-07-04 12:19:40,203 - SeleniumProject1 -INFO - A captcha appeared
+2022-07-04 12:19:41,374 - SeleniumProject1 -INFO - The site has been closed
+2022-07-04 12:19:58,745 - SeleniumProject1 -INFO - User logged in correctly
+2022-07-04 12:20:01,306 - SeleniumProject1 -INFO - The user searched for a product
+2022-07-04 12:20:04,941 - SeleniumProject1 -INFO - The user went to the product details
+2022-07-04 12:20:05,774 - SeleniumProject1 -INFO - The user changed the number of items and clicked add to cart
+2022-07-04 12:20:08,836 - SeleniumProject1 -INFO - The user went to the order page
+2022-07-04 12:20:12,154 - SeleniumProject1 -INFO - The user filled in the required fields and went to the order summary view
+2022-07-04 12:20:14,229 - SeleniumProject1 -INFO - User logged out successfully
+2022-07-04 12:20:15,289 - SeleniumProject1 -INFO - The site has been closed

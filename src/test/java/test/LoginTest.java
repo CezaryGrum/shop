@@ -19,7 +19,7 @@ public class LoginTest extends BaseTest{
     public void unsuccessfulLoginTest() throws IOException {
         NavigationBar navigationBar = new NavigationBar(driver);
         List<String> errors = navigationBar.openLoginPage()
-                .unsuccessfulLogin(BAD_USER_NAME,BAD_PASSWORD)
+                .unsuccesfulLogin(BAD_USER_NAME,BAD_PASSWORD)
                 .getErrors();
         List<String> expectedErrors = List.of("Zły login lub hasło.");
         captureScreen(driver, "unsuccessfulLoginTest");

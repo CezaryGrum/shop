@@ -10,7 +10,11 @@
     <test name="WeaponShop Test">
         <parameter name="browser" value="chrome" />
         <classes>
+            <class name="test.LoginDDTTest"/>
             <class name="test.LoginTest" />
+            <class name="test.SearchProductTest" />
+            <class name="test.AddProductToCartTest" />
+            <class name="test.AddProductToCartLoggedUserTest" />
         </classes>
     </test>
 </suite>

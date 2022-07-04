@@ -19,7 +19,6 @@ public class LoginPage extends BasePage {
     @FindBy(name = "submit_login")
     private WebElement loginBtn;
 
-
     public LoginPage(WebDriver driver) {
         super(driver);
     }
@@ -34,11 +33,14 @@ public class LoginPage extends BasePage {
         loginBtn.click();
         return new MainPage(driver);
     }
-
-    public BadLoginPage unsuccessfulLogin(String login, String password){
+    public BadLoginPage unsuccesfulLogin(String login, String password){
         emailInput.sendKeys(login);
         passwordInput.sendKeys(password);
         loginBtn.click();
         return new BadLoginPage(driver);
+    }
+    public boolean getLogBtn(){
+        loginBtn.isDisplayed();
+        return true;
     }
 }
